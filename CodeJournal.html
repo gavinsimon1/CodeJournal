@@ -1,0 +1,21 @@
+<h1>Code Journal</h1>
+
+<p>
+    Date: 9/13/2020
+    Today's Progress: Made progress on the JavaScript calculator.  I've been working on preventing multiple decimal points.
+    Today, I was able to keep the fist decimal point to one.  Now I need to allow a first decimal point, and prevent 2 decimals
+    after the operator.  At the moment I can either keep it to only 1 decimal, which isn't practical, or allow lots of decimals after
+    the operator.  Getting closer though.   
+    
+  The code I added today was: 
+  if(buttonValue === '.' && value.indexOf('.') > -1 && !value.includes('*' || '+' || '-' || '/')) {
+    value = value.replace(/.++/, '')
+  }
+  
+        if(buttonValue === '.' && value.indexOf('.') > -1 && value.includes('*' || '+' || '-' || '/') ) {
+          console.log('Hey From Here')
+          //value = value.replace(/.+++/, '')
+  }
+    
+    Link to work: https://codepen.io/gavinsimon1/pen/GVozOb
+</p>
