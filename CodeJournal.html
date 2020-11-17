@@ -303,3 +303,62 @@ Link to work: https://boilerplate-express-1.gavinsimon1.repl.co
        
 </p>
 
+
+ <p>
+    Date: 11/17/2020
+    Today's Progress:  I planned to work on the MongoDB connection, but I got into the first couple of React & Redux challenges.  It's been a few months since I've used React, so it was a good refresher.
+    
+     Code:
+     
+     class DisplayMessages extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      input: '',
+      messages: []
+    }
+    this.handleChange = this.handleChange.bind(this);
+    this.submitMessage = this.submitMessage.bind(this);
+    
+  }
+  // Add handleChange() and submitMessage() methods here
+
+
+handleChange(event) {
+    this.setState({
+      input: event.target.value});
+  }
+
+  submitMessage() {
+    let newMessages = [...this.state.messages, this.state.input]
+    this.setState({
+      messages: newMessages,
+      input: ''
+    });
+  
+  }
+
+  render() {
+    return (
+      <div>
+        <h2>Type in a new Message:
+ <ul>
+   {this.state.messages.map(message => <li>{message}</li>)}
+        </ul>
+        </h2>
+        { /* Render an input, button, and ul below this line */ }
+<input value={this.state.input} onChange={this.handleChange}/>
+<button onClick={this.submitMessage}>Button</button>
+        { /* Change code above this line */ }
+      </div>
+    );
+  }
+};
+     
+     
+     
+     https://www.freecodecamp.org/learn/front-end-libraries/react-and-redux/manage-state-locally-first
+       
+</p>
+
+
