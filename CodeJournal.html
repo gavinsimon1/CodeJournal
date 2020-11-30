@@ -470,3 +470,25 @@ let actionCreator = () => {
      
     https://www.freecodecamp.org/learn/front-end-libraries/redux/create-a-redux-store
 </p>
+
+
+
+ <p>
+    Date: 11/30/2020
+    Today's Progress: I added a dispatch action and handled an action in store.
+     
+        store.dispatch(loginAction())
+     
+     const reducer = (state = defaultState, action) => {
+  // Change code below this line
+if(action.type === 'LOGIN'){
+    return {
+      login: true
+    }
+  } else {
+    return state
+  }
+  // Change code above this line
+};
+  
+</p>
