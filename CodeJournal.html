@@ -492,3 +492,23 @@ if(action.type === 'LOGIN'){
 };
   
 </p>
+
+ <p>
+    Date: 12/1/2020
+    Today's Progress: Redux: Use a Switch Statement to Handle Multiple Actions
+     
+     switch(action.type) {
+  case 'LOGIN': 
+  return {
+    authenticated: true
+    };
+
+  case 'LOGOUT': 
+  return {
+    authenticated: false
+    };
+
+  default: return defaultState
+}
+  
+</p>
