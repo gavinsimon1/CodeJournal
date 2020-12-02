@@ -512,3 +512,24 @@ if(action.type === 'LOGIN'){
 }
   
 </p>
+
+ <p>
+    Date: 12/2/2020
+    Today's Progress: The challenge today was simply creating variables for the login and logout.  Makes sense to me. 
+   const LOGIN = 'LOGIN'
+   const LOGOUT = 'LOGOUT'
+     switch(action.type) {
+  case LOGIN: 
+  return {
+    authenticated: true
+    };
+
+  case LOGOUT: 
+  return {
+    authenticated: false
+    };
+
+  default: return defaultState
+}
+  
+</p>
