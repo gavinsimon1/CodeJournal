@@ -545,3 +545,19 @@ store.subscribe(counter)
 
   
 </p>
+
+
+
+ <p>
+    Date: 12/4/2020
+    Today's Progress: Combined reducers
+     
+const rootReducer = Redux.combineReducers({
+  auth: authReducer,
+  count: counterReducer
+})// Define the root reducer here
+
+const store = Redux.createStore(rootReducer);
+
+  
+</p>
