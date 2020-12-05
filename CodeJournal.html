@@ -561,3 +561,32 @@ const store = Redux.createStore(rootReducer);
 
   
 </p>
+
+ <p>
+    Date: 12/5/2020
+    Today's Progress: Send Action Data to the Store
+
+  const notesReducer = (state = 'Initial State', action) => {
+  switch(action.type) {
+    // Change code below this line
+  case ADD_NOTE: 
+  return action.text
+  
+    // Change code above this line
+    default:
+      return state;
+  }
+};
+     const addNoteText = note => {
+  // change code below this line
+
+  return {
+    type: ADD_NOTE,
+    text: note
+  };
+
+  // change code above this line
+};
+
+const store = Redux.createStore(notesReducer);
+</p>
