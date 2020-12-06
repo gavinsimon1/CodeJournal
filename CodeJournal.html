@@ -590,3 +590,28 @@ const store = Redux.createStore(rootReducer);
 
 const store = Redux.createStore(notesReducer);
 </p>
+
+
+
+ <p>
+    Date: 12/6/2020
+    Today's Progress: Redux: Use Middleware to Handle Asynchronous Actions
+    
+     const handleAsync = () => {
+  return function(dispatch) {
+    // Dispatch request action here
+   dispatch(requestingData())
+    setTimeout(function() {
+      let data = {
+        users: ['Jeff', 'William', 'Alice']
+      }
+      // Dispatch received data action here
+    dispatch(receivedData(data));
+
+
+    }, 2500);
+  }
+};
+     
+
+</p>
