@@ -654,3 +654,26 @@ const store = Redux.createStore(counterReducer);
      
      
 </p>
+
+ <p>
+    Date: 12/8/2020
+    Today's Progress: Wrote a mixin for border-radius in the Sass: Create Reusable CSS with Mixins challenge
+
+
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+
+}
+
+
+  #awesome {
+    @include border-radius(15px);
+    width: 150px;
+    height: 150px;
+    background-color: green;
+
+  }
+</p>
