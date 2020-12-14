@@ -728,3 +728,15 @@ const store = Redux.createStore(counterReducer);
     Today's Progress: Worked on not mutating state in Redux in the Never Mutate State challenge.
     return [...state, action.todo];
 </p>
+
+<p>
+    Date: 12/14/2020
+    Today's Progress: Using spread operators on arrays and remove an item from an array
+     return [...state, action.todo];
+    
+    return [
+        ...state.slice(0, action.index),
+        ...state.slice(action.index + 1, state.length)
+        ]
+    
+</p>
