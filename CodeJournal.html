@@ -933,4 +933,19 @@ let beagle = Object.create(Animal.prototype);
 
         Dog.prototype = Object.create(Animal.prototype)
     
-        </p>
+</p>
+
+
+
+<p>
+    Date: 12/30/2020
+    Today's Progress: Object Oriented Programming: Add Methods After Inheritance
+
+     Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+
+Dog.prototype.bark = function (){
+    console.log("Woof!");
+}
+    
+</p>
